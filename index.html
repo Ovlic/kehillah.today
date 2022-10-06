@@ -460,7 +460,11 @@
             })
 
             if (!(datedata[theschedule]['message'] == undefined)) {
+            document.getElementById('specialschedule').style.display = 'inline-block'
+            console.log("display should not be none")
             document.getElementById('howstheschedule').innerHTML = datedata[theschedule]['message']
+            
+            }
             
             }
 
