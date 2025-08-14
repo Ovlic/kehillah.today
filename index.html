@@ -44,7 +44,7 @@
 
     <p id="announcement" class="announcement"><span style="font-size: 24px; font-weight: bold;">Announcement</span><br><br><span style="line-height: 1.2em">
 
-        <b>Hi!</b> I was given a list of important days for this semester, but I don't know what the special schedules for those days are. Could someone inform me (<a href="mailto:braxtongill5@gmail.com">braxtongill5@gmail.com</a>) what Kehillah's doing this week special schedule-wise? I know there's a late start this Tuesday and a noon release on Friday, but I don't know what that entails.<br><br>Additionally, if someone could just send the full list of schedules (so I can add them to kehillah.today!) that would be really appreciated.<br><sup>Do people still use this?</sup>
+        <b>Hi!</b><br>I'm still waiting on the block schedule for the 2025–26 school year, so kehillah.today may be inaccurate today (August 14th).<br>Expect everything to be fixed by Friday.<br>If you have information on either Kehillah's new block schedule or what the special schedules are this year, please send it to <a href="mailto:braxtongill5@gmail.com">braxtongill5@gmail.com</a>.<br><br>Best of luck with the new school year!
  
     </span><br><br><br><span class="button" onclick="dismissAnnouncement()">Dismiss</span><br><br><span style="font-size: 12px; font-style: italic; color: #335; cursor: pointer;" onclick="iHateAnnouncements()">Never show me announcements again</span></p>
 
@@ -142,7 +142,7 @@
     <span>Data sourced from the <a href="https://kehillah.org/block-schedule" target="_blank" rel="noopener noreferrer"><span style="color: #8080a2">Kehillah block schedule</span></a> and <a href="https://kehillah.org/key-dates" target="_blank" rel="noopener noreferrer"><span style="color: #8080a2">one-page calendar</span></a>.</span><br>
     <span><span style="font-family: Righteous">kehillah.today</span> is not affiliated with <a href="https://kehillah.org/" target="_blank" rel="noopener noreferrer"><span style="color: #8080a2">kehillah.org</span></a> or the <a href="https://apps.apple.com/app/kehillah-today/id6443492717" target="_blank" rel="noopener noreferrer"><span style="color: #8080a2">mobile app</span></a> with the same name.</span><br>
     <span>Fonts used: <span style="font-family: Righteous">Righteous</span>, <span style="font-family: Bebas Neue">Bebas Neue</span>, and Barlow Semi Condensed.</span><br>
-    <span id="version">v0.6.7 — August 17th, 2024</span><br>
+    <span id="version">v0.6.8 — August 14th, 2025</span><br>
     <span></p>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         minutes = 0;
@@ -479,10 +479,10 @@
 
         function dismissAnnouncement() { // dismisses the current announcement
             document.getElementById('announcement').style.display = "none";
-            localStorage.setItem('announcement-2023-09-25','viewed');
+            localStorage.setItem('announcement-2025-08-14','viewed');
         }
 
-        if(localStorage.getItem('announcement-2023-09-25') == 'viewed' || localStorage.getItem('announcements') == 'none') {
+        if(localStorage.getItem('announcement-2025-08-14') == 'viewed' || localStorage.getItem('announcements') == 'none') {
             document.getElementById('announcement').style.display = "none";
         }
 
@@ -831,7 +831,7 @@
         text-align: center;
         box-shadow: 10px 10px rgb(65, 65, 91);
         transition-duration: 0.2s;
-        display: none; /* no announcement needed! */
+        /*display: none; /* no announcement needed! */
     }
 
     .announcement:hover {
